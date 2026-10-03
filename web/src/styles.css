@@ -30,3 +30,151 @@ td {
   padding: 0.5rem 0.75rem;
   text-align: left;
 }
+
+.filters {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: Canvas;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.filter-notice {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.filters label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.filters input,
+.filters select {
+  font: inherit;
+  padding: 0.5rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-height: 70vh;
+}
+
+table {
+  width: 100%;
+}
+
+.over_capacity {
+  background: color-mix(in srgb, #e34b4b 18%, transparent);
+}
+
+.capacity-editor {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.capacity-editor label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.capacity-editor input {
+  font: inherit;
+  width: 6rem;
+  max-width: 100%;
+}
+
+.capacity-editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.capacity-editor p {
+  margin: 0;
+}
+
+.week-tables {
+  display: grid;
+  gap: 2rem;
+}
+
+.week-group h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.capacity-grid {
+  width: 100%;
+}
+
+.capacity-grid th,
+.capacity-grid td {
+  width: 25%;
+}
+
+.sort-button {
+  font: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sort-button:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.week-controls {
+  margin-bottom: 0.75rem;
+}
+
+.week-controls select {
+  font: inherit;
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+}
+
+.state-preview {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 0.5rem;
+}
+
+.state-preview summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.state-preview select {
+  font: inherit;
+  padding: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.state-preview-content {
+  margin-top: 1rem;
+}
+
+.state-error {
+  padding: 0.75rem;
+  border-left: 3px solid #e34b4b;
+}
