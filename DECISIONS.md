@@ -59,6 +59,8 @@ One concrete example. Every real session has one.
 
 - Add caching by date range so revisiting a filter doesn’t fetch and calculate the same data again. Cache the available-week list separately, and invalidate the edited person’s cached rows across all ranges after a capacity change to keep the numbers correct.
 
+- Add Storybook to document components and their loading, empty, error, and editing states, making them easier to review and test in isolation.
+
 - Revisit the schema to don't have a coupling between week and working capacity.
     - Currently, I can only change the capacity by weeks, assuming a week begins on Monday and ends on Friday 
     - Currently, changing a capacity on the present changes the past.
