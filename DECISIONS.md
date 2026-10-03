@@ -57,6 +57,8 @@ One concrete example. Every real session has one.
 ## What would you do differently with a week?
 - Talk with the product owner about how managers use the view and which decisions it should help them make.
 
+- Add caching by date range so revisiting a filter doesn’t fetch and calculate the same data again. Cache the available-week list separately, and invalidate the edited person’s cached rows across all ranges after a capacity change to keep the numbers correct.
+
 - Revisit the schema to don't have a coupling between week and working capacity.
     - Currently, I can only change the capacity by weeks, assuming a week begins on Monday and ends on Friday 
     - Currently, changing a capacity on the present changes the past.
